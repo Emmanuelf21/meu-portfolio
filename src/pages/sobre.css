@@ -1,0 +1,55 @@
+.container-sobre{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 55%;
+    margin: 4.2% auto;
+    padding: 4rem 8rem;
+    height: 80%;
+    align-items: center;
+    height: fit-content;
+    border-radius: 25px;
+    box-shadow: 6px 6px 8px #0000004f;
+    background: linear-gradient(rgba(135, 207, 231, 0.603), rgba(173, 216, 230, 0.705)) padding-box,
+    linear-gradient(145deg, transparent 15%,#2e2e2e73, #1414149d) border-box;
+    border-radius: 20px;
+    border: 5px solid transparent;
+}
+.lateral{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+}
+/* .imagem-codigo{
+    background-image: url('../assets/images/banner-meio.png');
+    width: 265px;
+    height: 400px;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+} */
+.icones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.icones svg{
+    font-size: 4rem;
+    border-radius: 20px;
+    color : rgb(247, 243, 5);
+}
+
+.sobre-info, .sobre-info .texto{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sobre-info .texto{
+    text-align: justify;
+    font-size: 1.4rem;
+}
+

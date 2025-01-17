@@ -1,0 +1,200 @@
+.container-contato{
+    display: block;
+    align-items: center;
+    width: 60%;
+    margin: 4.6% auto;
+    padding: 4rem 8rem;
+    height: fit-content;
+    border-radius: 25px;
+    box-shadow: 6px 6px 8px #0000004f;
+    background: linear-gradient(rgba(135, 207, 231, 0.603), rgba(173, 216, 230, 0.705)) padding-box,
+    linear-gradient(145deg, transparent 15%,#2e2e2e73, #1414149d) border-box;
+    border-radius: 20px;
+    border: 5px solid transparent;
+}
+
+.formulario{
+    width: fit-content;
+    margin: auto;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.um-input .inputs, .textarea textarea{
+    border: none;
+    border-bottom: 1px solid white;
+    box-shadow:  
+    2px 2px 5px white;
+    background: rgba(182, 182, 182, 0.219);
+
+    font-size: 22px;
+
+    width: 550px;
+    height: 50px;
+
+    padding-left: 10px;
+    position: relative;
+
+    outline: none;
+}
+
+.um-input, .textarea {
+    position: relative;
+}
+
+.um-input label {
+    width: fit-content;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    transition: all 0.2s linear;
+}
+
+.textarea label{
+    width: fit-content;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.2s linear;
+}
+
+form .um-input .inputs:focus ~label, form .textarea textarea:focus ~label,
+form .um-input .inputs:valid ~label, form .textarea textarea:valid ~label{
+    transform: translateY(-45px);
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+}
+
+.textarea textarea{
+    height: 250px;
+    padding-top: 10px;
+    resize: none;
+    overflow: scroll;
+}
+
+.textarea textarea::-webkit-scrollbar{
+    width: 20px;
+    height: 100%;
+}
+
+.textarea textarea::-webkit-scrollbar-track{
+    background-color: rgb(201, 201, 201);
+}
+
+.textarea textarea::-webkit-scrollbar-thumb{
+    background: rgba(47, 4, 236, 0.801);
+    border-top-right-radius: 15px 25px; 
+    border-bottom-right-radius: 15px 25px;
+}
+
+.btn-enviar{
+    width: fit-content;
+    height: auto;
+}
+
+.btn-enviar button{
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 16px;
+    border: none;
+    padding: 2px;
+    background: radial-gradient(circle 80px at 80% -10%, #ffffff, #181b1b);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.btn-enviar button:hover{
+    width: 130px;
+    height: 50px;
+}
+
+.btn-enviar button::after {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 60%;
+    border-radius: 120px;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 20px #ffffff38;
+    z-index: -1;
+}
+  
+.blob1 {
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    border-radius: 16px;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(
+      circle 60px at 0% 100%,
+      #3fe9ff,
+      #0000ff80,
+      transparent
+    );
+    box-shadow: -10px 10px 30px #0051ff2d;
+}
+  
+.inner {
+    padding: 14px 25px;
+    border-radius: 14px;
+    color: #fff;
+    z-index: 3;
+    position: relative;
+    background: radial-gradient(circle 80px at 80% -50%, #777777, #0f1111);
+}
+
+.inner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 14px;
+    background: radial-gradient(
+      circle 60px at 0% 100%,
+      #00e1ff1a,
+      #0000ff11,
+      transparent
+    );
+    position: absolute;
+}
+  
+
+@keyframes slider {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-650px * 4));
+        transform: translateX(calc(-650px * 4));
+    }
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin {
+   from{
+    --angle: 0deg;
+   }
+   to{
+    --angle: 360deg;
+   }
+}

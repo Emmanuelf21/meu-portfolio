@@ -1,0 +1,11 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    /* border-box impede que o elemento filho ultrapasse o tamanho do elemento pai */
+    box-sizing: border-box; 
+}
+
+body{
+  background-color: #62c0f7;
+}

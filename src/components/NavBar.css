@@ -1,0 +1,66 @@
+#navBar,
+.menuBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navBar{
+    align-items: center;
+    background-color: #fff;
+    width: 90%;
+    margin: 1rem auto;
+    height: 5rem;
+    border-radius: 25px;
+    padding: 3rem;
+    box-shadow: 0px 6px 8px #0000004f;
+}
+
+.menuBar{
+    width: 50%;
+}
+a.h2-home{
+  color: #0022FF;
+}
+.h2-sobre,
+.h2-projetos,
+.h2-contato{
+    color: #000;
+}
+
+.menuBar a, #navBar p{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  
+  @keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 16.3em;
+    } 
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+
+  .text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #0022FF;
+    border-right: 0.2em solid #0022FF; /* Cursor */
+    animation: typeAndDelete 4s steps(11) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
+  }
+  

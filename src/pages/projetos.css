@@ -1,0 +1,23 @@
+.container-projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    width: 60%;
+    margin: 4.6% auto;
+    padding: 4rem 8rem;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 6px 6px 8px #0000004f;
+    background: linear-gradient(rgba(135, 207, 231, 0.603), rgba(173, 216, 230, 0.705)) padding-box,
+    linear-gradient(145deg, transparent 15%,#2e2e2e73, #1414149d) border-box;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+}
+.cards{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
