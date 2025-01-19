@@ -32,7 +32,7 @@ const NavBar = () => {
   return (
     <nav id="navBar">
       <menu className="menuBar">
-        <Link to="meu-portfolio?q=1" className='h2-home'>Home</Link>
+        <Link to="/?q=1" className='h2-home'>Home</Link>
         <Link to="sobre?q=2" className='h2-sobre'>Sobre</Link>
         <Link to="projetos?q=3" className='h2-projetos'>Projetos</Link>
         <Link to="contato?q=4" className='h2-contato'>Contato</Link>
