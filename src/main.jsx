@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
           <Route element={<App/>}/>
           <Route path='/' element={<Home/>}/>
-          {/* <Route path='/meu-portfolio' element={<Home/>}/> */}
+          <Route path='/meu-portfolio' element={<Home/>}/>
           <Route path='/sobre' element={<Sobre/>}/>
           <Route path='/projetos' element={<Projetos/>}/>
           <Route path='/projetos/:id' element={<Projeto/>}/>
