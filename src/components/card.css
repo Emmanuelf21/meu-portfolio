@@ -106,14 +106,14 @@ input + .card[for="1"]{
 }
 
 input + .card[for="2"]{
-    background-image: url('../assets/images/img1.png');
+    background-image: url('../assets/images/loja_consoles.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 5% 100%;
 }
 
 input + .card[for="3"]{
-    background-image: url('../assets/images/imobliaria-fachada.png');
+    background-image: url('../assets/images/imobliaria_fachada.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 10% 90%;
@@ -133,13 +133,13 @@ input:checked + .card[for="1"] {
 }
 
 input:checked + .card[for="2"] {
-    background-image: url('../assets/images/img1.png');
+    background-image: url('../assets/images/loja_consoles.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 input:checked + .card[for="3"] {
-    background-image: url('../assets/images/imobliaria-fachada.png');
+    background-image: url('../assets/images/imobliaria_fachada.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
