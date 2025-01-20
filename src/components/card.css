@@ -148,3 +148,13 @@ input:checked + .card[for="4"] {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+@media (max-width: 1350px){
+    
+    .card{
+        height: 100px;
+    }
+    input:checked + label {
+        width: 600px;
+        height: 400px;
+    }
+}

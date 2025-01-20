@@ -56,3 +56,23 @@
 .texto-azul{
     color: #0022FF;
 }
+@media (max-width: 1650px){
+    .container-home{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 2rem 4rem;
+    }
+    .home-sobre{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        gap: 2rem;
+        width: fit-content;
+    }
+    .container-foto img{
+        width: 12rem;
+        border-radius: 25px;
+        box-shadow: 4px 4px 8px #00000088 ;
+    }
+}

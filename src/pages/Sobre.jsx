@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaJava, FaPython, FaReact, FaJs } from 'react-icons/fa';
 
+
 import './sobre.css';
 
 const Sobre = () => {
@@ -10,7 +11,7 @@ const Sobre = () => {
         {/* <div className='imagem-codigo'></div> */}
         <div className='icones'>
           <FaJava />
-          <FaPython color='rgb(0, 255, 213)'/>
+          <FaPython color='rgb(0, 255, 213)' />
         </div>
       </section>
       <section className="sobre-info">
@@ -29,7 +30,7 @@ const Sobre = () => {
       </section>
       <section className='lateral'>
         <div className='icones'>
-          <FaReact color='rgb(0, 255, 213)'/>
+          <FaReact color='rgb(0, 255, 213)' />
           <FaJs />
         </div>
         {/* <div className='imagem-codigo'></div> */}

@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
-    width: 60%;
+    width: 90%;
     margin: 4.6% auto;
     padding: 4rem 8rem;
     align-items: center;
@@ -20,4 +20,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
+}
+
+@media (max-width: 1350px){
+    .container-projetos{
+        padding: 2rem 4rem;
+        width: fit-content;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        height: 800px;
+    }
 }
