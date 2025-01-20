@@ -23,7 +23,9 @@ a.h2-home{
 }
 .h2-sobre,
 .h2-projetos,
-.h2-contato{
+.h2-contato,
+.h2-habilidades
+{
     color: #000;
 }
 

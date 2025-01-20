@@ -18,10 +18,10 @@ const texto3 = 'Site para compra e venda de imóveis';
 const habilidades3 = 'HTML - CSS';
 const projeto3 = 'https://emmanuelf21.github.io/flexbox-css/';
 
-const titulo4 = "Five Night's at Freddys";
-const texto4 = 'Lista dos jogos de FNAF';
+const titulo4 = "Clínica Pé de Pano";
+const texto4 = 'Site de Clínica de Fisioterapia';
 const habilidades4 = 'HTML - CSS';
-const projeto4 = 'https://emmanuelf21.github.io/fnaf/';
+const projeto4 = 'https://senai-morvan-figueiredo.github.io/ClinicaPeDePano/index.html';
 
 const Projetos = () => {
   return (

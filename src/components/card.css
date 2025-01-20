@@ -120,10 +120,10 @@ input + .card[for="3"]{
 }
 
 input + .card[for="4"]{
-    background-image: url('../assets/images/fnaf.PNG');
+    background-image: url('../assets/images/clinica.PNG');
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: 84% 85%;
+    background-position: 93% 0%;
 }
 
 input:checked + .card[for="1"] {
@@ -144,7 +144,7 @@ input:checked + .card[for="3"] {
     background-size: 100% 100%;
 }
 input:checked + .card[for="4"] {
-    background-image: url('../assets/images/fnaf.PNG');
+    background-image: url('../assets/images/clinica.PNG');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

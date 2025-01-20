@@ -11,6 +11,7 @@ import Sobre from './pages/Sobre.jsx';
 import Projetos from './pages/Projetos.jsx';
 import Contato from './pages/Contato.jsx';
 import Footer from './components/Footer.jsx';
+import Habilidades from './pages/Habilidades.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='/sobre' element={<Sobre/>}/>
           <Route path='/projetos' element={<Projetos/>}/>
           <Route path='/contato' element={<Contato/>}/>
+          <Route path='/habilidades' element={<Habilidades/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
