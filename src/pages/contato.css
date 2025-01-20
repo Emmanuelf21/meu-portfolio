@@ -198,3 +198,36 @@ form .um-input .inputs:valid ~label, form .textarea textarea:valid ~label{
     --angle: 360deg;
    }
 }
+
+@media (max-width: 1350px){
+    .container-contato{
+        padding: 2rem 4rem;
+    }
+    
+    .formulario{
+        width: 100%;
+        margin: auto;
+        display: block;
+        justify-content: center;
+    }
+    
+    .formulario form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 20px;
+        width: 100%;
+        
+    }
+    
+    .um-input .inputs, .textarea textarea{
+        width: 100%;
+        height: 50px;
+    }
+    .textarea textarea{
+        width: 100%;
+        height: 250px;
+    }
+    
+}
