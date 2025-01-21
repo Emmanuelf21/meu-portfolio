@@ -24,7 +24,7 @@ const Contato = () => {
           </div>
           <div className="um-input">
             <input type="text" name="email" id="email" className="inputs" required autoComplete="off" />
-            <label htmlFor="email">E-mail:</label>
+            <label htmlFor="email">E-mail de contato:</label>
           </div>
           <div className="um-input">
             <input type="text" name="subject" id="razao" className="inputs" required autoComplete="off" />
