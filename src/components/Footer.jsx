@@ -15,7 +15,7 @@ const footer = () => {
       
       <div className='social-media'>
         <Link to="https://github.com/Emmanuelf21" target='_Blank'><FaGithub/></Link>
-        <Link to="www.linkedin.com/in/emmanuel-franco-dev" target='_Blank'><FaLinkedin/></Link>
+        <Link to="https://www.linkedin.com/in/emmanuel-franco-dev" target='_Blank'><FaLinkedin/></Link>
       </div>
     </footer>
   )
