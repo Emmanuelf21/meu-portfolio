@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import Hand from "../assets/images/icons/agreement.png";
 import Paper from "../assets/images/icons/essay.png";
@@ -42,35 +42,35 @@ const Habilidades = () => {
       <section className='certificados'>
         <h2>Certificados</h2>
         <article className="certificados-flex">
-            <div className="list">
-              <div className="item" >
-                <img src={BadgeGoogle} alt="#"/>
-              </div>
-              <div className="item" >
-                <img src={BadgeCisco} alt="#"/>
-              </div>
-              <div className="item" >
-                <img src={SecureCloud} alt="#"/>
-              </div>
-              <div className="item" >
-                <img src={EnglishIt} alt="#"/>
-              </div>
-              <div className="item" >
-                <img src={LoadBalancing} alt="#"/>
-              </div>
-              <div className="item" >
-                <img src={ItEssentials} alt="#"/>
-              </div>
-              <div className="item" >
-                <img src={JSEssentials1} alt="#"/>
-              </div>
-              <div className="item" >
-                <img src={PrepareData} alt="#"/>
-              </div>
-              <div className="item" >
-                <img src={SetUpAppDev} alt="#"/>
-              </div>
+          <div className="list">
+            <div className="item" style={{"--position": 1}}>
+              <img src={BadgeGoogle} alt="#" />
             </div>
+            <div className="item" style={{"--position": 2}}>
+              <img src={BadgeCisco} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 3}}>
+              <img src={SecureCloud} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 4}}>
+              <img src={EnglishIt} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 5}}>
+              <img src={LoadBalancing} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 6}}>
+              <img src={ItEssentials} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 7}}>
+              <img src={JSEssentials1} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 8}} >
+              <img src={PrepareData} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 9}}>
+              <img src={SetUpAppDev} alt="#" />
+            </div>
+          </div>
         </article>
         <Link to="https://www.credly.com/users/emmanuel-franco.84f6f802">Visualizar certificados e badges</Link>
       </section>
