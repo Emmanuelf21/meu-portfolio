@@ -6,7 +6,7 @@ import Paper from "../assets/images/icons/essay.png";
 import Pencil from "../assets/images/icons/pencil.png";
 
 import BadgeGoogle from "../assets/images/certificados/badge_google.png"
-import BadgeCisco from "../assets/images/certificados/badge_IoT_cisco.png"
+import BadgeCisco from "../assets/images/certificados/badge-iot-cisco.png"
 import SecureCloud from "../assets/images/certificados/build-a-secure-cloud-network.png"
 import EnglishIt from "../assets/images/certificados/english-for-it-1.png"
 import LoadBalancing from "../assets/images/certificados/implement-load-balancing.png"
