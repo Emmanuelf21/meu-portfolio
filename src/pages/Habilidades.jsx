@@ -72,7 +72,7 @@ const Habilidades = () => {
             </div>
           </div>
         </article>
-        <Link to="https://www.credly.com/users/emmanuel-franco.84f6f802">Visualizar certificados e badges</Link>
+        <Link to="https://www.credly.com/users/emmanuel-franco.84f6f802" target='_blank'>Visualizar certificados e badges</Link>
       </section>
     </div>
   )
