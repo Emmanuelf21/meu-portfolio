@@ -56,6 +56,34 @@
 .texto-azul{
     color: #0022FF;
 }
+
+
+  
+  @keyframes typeAndDelete2 {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 9.7em;
+    } 
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+
+  .text2 {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #0022FF;
+    border-right: 0.2em solid #0022FF; /* Cursor */
+    animation: typeAndDelete2 4s steps(11) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
+  }
+
 @media (max-width: 1650px){
     .container-home{
         display: flex;

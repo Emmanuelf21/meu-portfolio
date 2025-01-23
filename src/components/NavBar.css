@@ -3,20 +3,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 #navBar{
     align-items: center;
     background-color: #fff;
     width: 90%;
     margin: 1rem auto;
-    height: 5rem;
+    height: fit-content;
     border-radius: 25px;
-    padding: 3rem;
+    padding: 2rem;
     box-shadow: 0px 6px 8px #0000004f;
 }
 
 .menuBar{
     width: 50%;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 a.h2-home{
   color: #0022FF;

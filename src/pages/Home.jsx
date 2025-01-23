@@ -10,7 +10,7 @@ const Home = () => {
       <div className="home-sobre">
         <h2>
           Muito prazer!<br/>
-          <span>Eu sou o <p className='texto-azul'>Emmanuel Franco.</p></span>
+          <span>Eu sou o <p className='texto-azul text2'>Emmanuel Franco!</p></span>
         </h2>
         <p>
           Bacharel em Ciências da computação e cursando Técnico em Desenvolvimento de Sistemas.
