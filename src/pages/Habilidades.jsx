@@ -15,6 +15,15 @@ import JSEssentials1 from "../assets/images/certificados/javascript-essentials-1
 import PrepareData from "../assets/images/certificados/prepare-data.png"
 import SetUpAppDev from "../assets/images/certificados/set-up-an-app-dev.png"
 
+import html from "../assets/images/icons/html-icon.png"
+import css from "../assets/images/icons/css-icon.png"
+import js from "../assets/images/icons/js-icon.png"
+import react from "../assets/images/icons/react-icon.png"
+import java from "../assets/images/icons/java-icon.png"
+import python from "../assets/images/icons/python-icon.png"
+import node from "../assets/images/icons/node.png"
+import figma from "../assets/images/icons/figma-icon.png"
+import git from "../assets/images/icons/git-icon.png"
 
 import './habilidades.css';
 
@@ -24,6 +33,37 @@ const Habilidades = () => {
     <div className="container-habilidades">
       <section className='habilidades'>
         <h2>Habilidades</h2>
+        <article className="slider" style={{"--width": "50px", "--height": "50px", "--quantidade": 9}}>
+          <div className="list">
+            <div className="item" style={{"--position": 1}}>
+              <img src={html} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 2}}>
+              <img src={css} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 3}}>
+              <img src={js} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 4}}>
+              <img src={react} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 5}}>
+              <img src={java} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 6}}>
+              <img src={python} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 7}}>
+              <img src={git} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 8}}>
+              <img src={node} alt="#" />
+            </div>
+            <div className="item" style={{"--position": 9}}>
+              <img src={figma} alt="#" />
+            </div>
+          </div>
+        </article>
         <article className='cards-habilidades'>
           <article className='card-habilidade'>
             <img src={Hand} alt="#" />
@@ -41,7 +81,11 @@ const Habilidades = () => {
       </section>
       <section className='certificados'>
         <h2>Certificados</h2>
-        <article className="certificados-flex">
+        <article className="slider" style={{
+          "--width": "150px",
+          "--height": "150px",
+          "--quantidade": 9
+          }}>
           <div className="list">
             <div className="item" style={{"--position": 1}}>
               <img src={BadgeGoogle} alt="#" />
