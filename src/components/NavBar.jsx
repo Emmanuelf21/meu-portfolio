@@ -6,36 +6,34 @@ import './NavBar.css'
 const NavBar = () => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get('q');
-  const links = [document.querySelector(".h2-home"), document.querySelector(".h2-sobre"), document.querySelector(".h2-projetos"), document.querySelector(".h2-contato"), document.querySelector(".h2-habilidades")];
 
   useEffect(() => {
-    if (!query) {
-      links.forEach((link) => { link.style = 'color: #000' });
-      links[0].style = 'color: #0022FF';
-    } else {
-      switch (query) {
-        case '1':
-          links.forEach((link) => { link.style = 'color: #000' });
-          links[0].style = 'color: #0022FF';
-          break;
-        case '2':
-          links.forEach((link) => { link.style = 'color: #000' });
-          links[1].style = 'color: #0022FF';
-          break;
-        case '3':
-          links.forEach((link) => { link.style = 'color: #000' });
-          links[2].style = 'color: #0022FF';
-          break;
-        case '4':
-          links.forEach((link) => { link.style = 'color: #000' });
-          links[3].style = 'color: #0022FF';
-          break;
-        case '5':
-          links.forEach((link) => { link.style = 'color: #000' });
-          links[4].style = 'color: #0022FF';
-          break;
-      }
+    const links = [document.querySelector(".h2-home"), document.querySelector(".h2-sobre"), document.querySelector(".h2-projetos"), document.querySelector(".h2-contato"), document.querySelector(".h2-habilidades")];
+    links.forEach((link) => { link.style = 'color: #000' });
+    links[0].style = 'color: #0022FF';
+    switch (query) {
+      case '1':
+        links.forEach((link) => { link.style = 'color: #000' });
+        links[0].style = 'color: #0022FF';
+        break;
+      case '2':
+        links.forEach((link) => { link.style = 'color: #000' });
+        links[1].style = 'color: #0022FF';
+        break;
+      case '3':
+        links.forEach((link) => { link.style = 'color: #000' });
+        links[2].style = 'color: #0022FF';
+        break;
+      case '4':
+        links.forEach((link) => { link.style = 'color: #000' });
+        links[3].style = 'color: #0022FF';
+        break;
+      case '5':
+        links.forEach((link) => { link.style = 'color: #000' });
+        links[4].style = 'color: #0022FF';
+        break;
     }
+
   }, [query])
 
   return (
