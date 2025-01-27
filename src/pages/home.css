@@ -104,3 +104,36 @@
         box-shadow: 4px 4px 8px #00000088 ;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .container-home{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 2rem;
+        padding: 1rem;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    .home-sobre{
+        align-items: center;
+    }
+    .home-sobre h2{
+        text-align: center;
+    }
+    .home-sobre h2 span{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .text2{
+        animation: none;
+        width: 100%;
+        border: none;
+        /* font-size: 1rem; */
+    }
+}
