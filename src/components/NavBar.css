@@ -19,7 +19,6 @@
 #navBar svg{
   display: none;
 }
-
 .menu-burger{
   width: 50%;
 }
@@ -45,9 +44,8 @@ a.h2-home{
     font-weight: bold;
     font-size: 1.5rem;
 }
-.visivel{
-  display: flex;
-}
+
+
 @keyframes blinkCursor {
     50% {
       border-right-color: transparent;
@@ -78,8 +76,19 @@ a.h2-home{
     animation: typeAndDelete 4s steps(11) infinite,
       blinkCursor 0.5s step-end infinite alternate;
   }
+  @media screen and (max-width: 1490px) {
+    .menu-burger{
+      width: 50%;
+    }
+    .menuBar{
+      flex-wrap: nowrap;
+    }
+    .menuBar a, #navBar p{
+      font-size: 1.2rem;
+  }
+  }
   
-  @media  screen and (max-width: 1000px) {
+  @media  screen and (max-width: 1035px) {
     #navBar{
       flex-direction: column-reverse;
       gap: 1rem;
@@ -106,7 +115,7 @@ a.h2-home{
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 100px;
+      top: 6.8rem;
       width: 70%;
       padding: 1rem;
       backdrop-filter: blur(8px);
@@ -137,5 +146,8 @@ a.h2-home{
     }
     #navBar svg{
       font-size: 1.7rem;
+    }
+    .menuBar{
+      top: 6rem;
     }
   }

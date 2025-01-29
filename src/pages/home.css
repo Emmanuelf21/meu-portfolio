@@ -104,14 +104,18 @@
         box-shadow: 4px 4px 8px #00000088 ;
     }
 }
-
+@media screen and (max-width: 1000px){
+    .container-home{
+        width: 80%;
+    }
+}
 @media screen and (max-width: 600px) {
     .container-home{
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
         gap: 2rem;
-        padding: 1rem;
+        padding: 1.2rem;
         background: none;
         border: none;
         box-shadow: none;
