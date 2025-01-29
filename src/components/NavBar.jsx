@@ -1,11 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 import './NavBar.css'
 
 const NavBar = () => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get('q');
+  
+  const handleDisplay = () => {
+    const classeMenu = document.querySelector(".menuBar");
+    const svg = document.querySelector(".svg-nav");
+    if(classeMenu.classList.contains("oculto")){
+      classeMenu.classList.toggle("visivel");
+      classeMenu.classList.toggle("oculto",false);
+      svg.classList.add("texto-azul");
+    }else{
+      classeMenu.classList.toggle("oculto");
+      classeMenu.classList.toggle("visivel",false);
+      svg.classList.remove("texto-azul");
+    }
+  }
 
   useEffect(() => {
     const links = [document.querySelector(".h2-home"), document.querySelector(".h2-sobre"), document.querySelector(".h2-projetos"), document.querySelector(".h2-contato"), document.querySelector(".h2-habilidades")];
@@ -38,14 +53,16 @@ const NavBar = () => {
 
   return (
     <nav id="navBar">
-      <menu className="menuBar">
-        <Link to="/?q=1" className='h2-home'>Home</Link>
-        <Link to="sobre?q=2" className='h2-sobre'>Sobre</Link>
-        <Link to="projetos?q=3" className='h2-projetos'>Projetos</Link>
-        <Link to="habilidades?q=5" className='h2-habilidades'>Habilidades</Link>
-        <Link to="contato?q=4" className='h2-contato'>Contato</Link>
+      <div className='menu-burger'>
+      <GiHamburgerMenu className='svg-nav' onClick={handleDisplay}/>
+      <menu className="menuBar oculto">
+        <Link to="/?q=1" className='h2-home' onClick={handleDisplay}>Home</Link>
+        <Link to="sobre?q=2" className='h2-sobre' onClick={handleDisplay}>Sobre</Link>
+        <Link to="projetos?q=3" className='h2-projetos' onClick={handleDisplay}>Projetos</Link>
+        <Link to="habilidades?q=5" className='h2-habilidades' onClick={handleDisplay}>Habilidades</Link>
+        <Link to="contato?q=4" className='h2-contato' onClick={handleDisplay}>Contato</Link>
       </menu>
-
+      </div>
       <p className="text">Bem-vindo ao meu Portfólio!</p>
     </nav>
   )

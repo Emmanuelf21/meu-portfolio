@@ -10,7 +10,7 @@ const footer = () => {
     <footer>
       
         <p className='email'>
-          <AiOutlineMail /> <p>emmanuelfranco2001@gmail.com</p>
+          <AiOutlineMail /> emmanuelfranco2001@gmail.com
         </p>
       
       <div className='social-media'>
