@@ -33,7 +33,12 @@ const Habilidades = () => {
     <div className="container-habilidades">
       <section className='habilidades'>
         <h2>Habilidades</h2>
-        <article className="slider" style={{"--width": "50px", "--height": "50px", "--quantidade": 9}}>
+        <article className="slider" style={{
+          "--width": "50px", 
+          "--height": "50px",
+          "--width2": "35px",
+          "--height2": "35px",
+          "--quantidade": 9}}>
           <div className="list">
             <div className="item" style={{"--position": 1}}>
               <img src={html} alt="#" />
@@ -84,6 +89,8 @@ const Habilidades = () => {
         <article className="slider" style={{
           "--width": "150px",
           "--height": "150px",
+          "--width2": "90px",
+          "--height2": "90px",
           "--quantidade": 9
           }}>
           <div className="list">

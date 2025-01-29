@@ -127,3 +127,60 @@
 :root{
     --position:0;
 }
+
+@media screen and (max-width: 800px) {
+    .container-habilidades{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-habilidades{
+        width: 100%;
+    }
+    .cards-habilidades{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .card-habilidade{
+        width: 200px;
+        padding: 0.5rem;
+    }
+
+    .slider{
+        height: var(--height2);
+        mask-image: linear-gradient(
+            to right,
+            transparent,
+            #000,
+            transparent 99%
+        );
+    }
+    
+    .slider .list{
+        min-width: calc(var(--width2)*var(--quantidade));
+    }
+    
+    .slider .list .item{
+        width: var(--width2);
+        height: var(--height2);
+        animation-delay: calc((9s/var(--quantidade))*(var(--position) - 1));
+    }
+
+    .certificados a{
+        font-size: 1rem;
+    }
+
+    @keyframes autorun{
+        from{
+            left: 100%;
+        }to{
+            left: calc(calc(var(--width2)*var(--quantidade))*-1);
+        }
+    }
+}
