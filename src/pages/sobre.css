@@ -53,6 +53,14 @@
     font-size: 1.4rem;
 }
 
+@media (max-width: 1900px) {
+    .container-sobre{
+        padding: 2rem 4rem;
+        gap: 2rem;
+        width: 70%;
+    }
+}
+
 @media (max-width: 1350px){
     .container-sobre{
         padding: 2rem 4rem;
@@ -61,6 +69,36 @@
     }
     .icones{
         width: fit-content;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .container-sobre{
+        flex-direction: column;
+        padding: 2rem 4rem;
+        gap: 2rem;
+        width: 90%;
+    }
+    .lateral .icones{
+        flex-direction: row;
+        gap: 100px;
+    }
+    .sobre-info h2{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-sobre{
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        padding: 1.2rem;
+        /* background: none;
+        border: none; */
+        box-shadow: none;
     }
     
 }
