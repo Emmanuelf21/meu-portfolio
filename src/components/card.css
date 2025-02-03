@@ -158,3 +158,24 @@ input:checked + .card[for="4"] {
         height: 400px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    input:checked + label {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    input:checked + label {
+        width: 100%;
+        height: 350px;
+    }
+
+    .row-text{
+        height: 100px;
+    }
+    .description{
+        height: 100%;
+    }
+}
