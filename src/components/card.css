@@ -113,10 +113,10 @@ input + .card[for="2"]{
 }
 
 input + .card[for="3"]{
-    background-image: url('../assets/images/imob.png');
+    background-image: url('../assets/images/todolist.png');
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: 10% 90%;
+    background-position: 30% 40%;
 }
 
 input + .card[for="4"]{
@@ -139,7 +139,7 @@ input:checked + .card[for="2"] {
 }
 
 input:checked + .card[for="3"] {
-    background-image: url('../assets/images/imob.png');
+    background-image: url('../assets/images/todolist.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

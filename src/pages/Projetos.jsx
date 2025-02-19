@@ -13,10 +13,10 @@ const texto2 = 'Site para venda de consoles';
 const habilidades2 = 'HTML - CSS';
 const projeto2 = 'https://emmanuelf21.github.io/site-consoles/';
 
-const titulo3 = "Imobiliária Fachada";
-const texto3 = 'Site para compra e venda de imóveis';
-const habilidades3 = 'HTML - CSS';
-const projeto3 = 'https://emmanuelf21.github.io/flexbox-css/';
+const titulo3 = "Lista de Tarefas";
+const texto3 = 'Adicione ou remova suas tarefas';
+const habilidades3 = 'React JS - Tailwind';
+const projeto3 = 'https://emmanuelf21.github.io/todo-list/';
 
 const titulo4 = "Clínica Pé de Pano";
 const texto4 = 'Site de Clínica de Fisioterapia';
