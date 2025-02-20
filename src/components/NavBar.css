@@ -145,9 +145,11 @@ a.h2-home{
     #navBar p{
       font-size: 1.1rem;
     }
+
     #navBar svg{
       font-size: 1.7rem;
     }
+    
     .menuBar{
       top: 6rem;
     }
