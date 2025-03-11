@@ -8,8 +8,7 @@ const email = import.meta.env.VITE_EMAIL;
 const Contato = () => {
   const navigate = useNavigate();
 
-  const handleSubmit = (e) =>{
-    e.preventDefault();
+  const handleSubmit = () =>{
     alert("E-mail enviado, aguarde o retorno!");
     navigate("/");
   }
