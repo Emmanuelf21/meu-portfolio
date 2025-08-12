@@ -18,10 +18,10 @@ const texto3 = 'Adicione ou remova suas tarefas';
 const habilidades3 = 'React JS - Tailwind';
 const projeto3 = 'https://emmanuelf21.github.io/todo-list/';
 
-const titulo4 = "Clínica Pé de Pano";
-const texto4 = 'Site de Clínica de Fisioterapia';
-const habilidades4 = 'HTML - CSS';
-const projeto4 = 'https://senai-morvan-figueiredo.github.io/ClinicaPeDePano/index.html';
+const titulo4 = "Dashboard";
+const texto4 = 'Dashboard com visualização de dados';
+const habilidades4 = 'TypeScript - React - Next - Tailwind';
+const projeto4 = 'https://dashboard-next-chi-virid.vercel.app';
 
 const Projetos = () => {
   return (

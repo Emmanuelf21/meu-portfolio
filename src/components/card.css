@@ -120,10 +120,10 @@ input + .card[for="3"]{
 }
 
 input + .card[for="4"]{
-    background-image: url('../assets/images/clinica.PNG');
+    background-image: url('../assets/images/dashboard.PNG');
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: 93% 0%;
+    background-position: 0% 0%;
 }
 
 input:checked + .card[for="1"] {
@@ -144,9 +144,9 @@ input:checked + .card[for="3"] {
     background-size: 100% 100%;
 }
 input:checked + .card[for="4"] {
-    background-image: url('../assets/images/clinica.PNG');
+    background-image: url('../assets/images/dashboard.PNG');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 @media (max-width: 1350px){
     
