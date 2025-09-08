@@ -106,10 +106,10 @@ input + .card[for="1"]{
 }
 
 input + .card[for="2"]{
-    background-image: url('../assets/images/consoles.png');
+    background-image: url('../assets/images/cinema.png');
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: 5% 100%;
+    background-position: 28% 30%;
 }
 
 input + .card[for="3"]{
@@ -133,7 +133,7 @@ input:checked + .card[for="1"] {
 }
 
 input:checked + .card[for="2"] {
-    background-image: url('../assets/images/consoles.png');
+    background-image: url('../assets/images/cinema.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

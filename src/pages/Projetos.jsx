@@ -8,10 +8,10 @@ const texto1 = 'Filmes melhor avaliados';
 const habilidades1 = 'HTML - CSS - JS - React - tmdb API';
 const projeto1 = 'https://emmanuelf21.github.io/movies_lib/';
 
-const titulo2 = 'Loja de Consoles';
-const texto2 = 'Site para venda de consoles';
-const habilidades2 = 'HTML - CSS';
-const projeto2 = 'https://emmanuelf21.github.io/site-consoles/';
+const titulo2 = 'Absolute Cinema';
+const texto2 = 'Compra de ingressos online';
+const habilidades2 = 'React - Supabase - tmdb API - Vercel';
+const projeto2 = 'https://cinema-supabase.vercel.app';
 
 const titulo3 = "Lista de Tarefas";
 const texto3 = 'Adicione ou remova suas tarefas';
