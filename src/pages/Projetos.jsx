@@ -13,10 +13,10 @@ const texto2 = 'Compra de ingressos online';
 const habilidades2 = 'React - Supabase - tmdb API - Vercel';
 const projeto2 = 'https://cinema-supabase.vercel.app';
 
-const titulo3 = "Lista de Tarefas";
-const texto3 = 'Adicione ou remova suas tarefas';
-const habilidades3 = 'React JS - Tailwind';
-const projeto3 = 'https://emmanuelf21.github.io/todo-list/';
+const titulo3 = "Reserva Karaokê";
+const texto3 = 'Faça reservas de salas de Karaokê';
+const habilidades3 = 'React.JS - Tailwind - supabase';
+const projeto3 = 'https://karaoke-novo.vercel.app';
 
 const titulo4 = "Dashboard";
 const texto4 = 'Dashboard com visualização de dados';
