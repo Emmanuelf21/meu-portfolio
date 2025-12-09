@@ -21,7 +21,7 @@ const Home = () => {
           <br/>
           Explore meu portfólio para saber mais do meu trabalho!
         </p>
-        <Link to="https://drive.google.com/file/d/1Xgerg_I7bogDbOH7YrQa2IQa1-XUotj-/view?usp=sharing" className='botao' target='_Blank'>
+        <Link to="https://drive.google.com/file/d/1nwRQsVKfyid7839_TYKPtbTzM9fR7nPB/view?usp=sharing" className='botao' target='_Blank'>
           Download CV
         </Link>
       </div>
