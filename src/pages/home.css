@@ -57,7 +57,10 @@
     color: #0022FF;
 }
 
-
+.nav-home{
+    display: flex;
+    gap: 1rem;
+}
   
   @keyframes typeAndDelete2 {
     0%,
