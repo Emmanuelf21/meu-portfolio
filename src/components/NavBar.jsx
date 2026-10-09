@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 

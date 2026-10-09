@@ -1,4 +1,3 @@
-import React from 'react'
 import Foto from '../assets/images/Emmanuel_Franco_Desenvolvedor_Frontend.jpeg'
 import { Link } from 'react-router-dom';
 

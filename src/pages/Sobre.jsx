@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaJava, FaPython, FaReact, FaJs } from 'react-icons/fa';
 
 
