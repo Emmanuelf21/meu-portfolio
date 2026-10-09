@@ -1,10 +1,10 @@
 
 import Card from '../components/Card';
 
-import imagemMovieLibrary from '../assets/images/movies_lib.PNG';
+import imagemMovieLibrary from '../assets/images/movies_lib.png';
 import imagemAbsoluteCinema from '../assets/images/cinema.png';
 import imagemKaraoke from '../assets/images/karaoke.png';
-import imagemDashboard from '../assets/images/dashboard.PNG';
+import imagemDashboard from '../assets/images/dashboard.png';
 
 import './projetos.css';
 
