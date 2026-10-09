@@ -1,181 +1,240 @@
+
+/* ===== CARD DE PROJETO ===== */
+
 .card {
-    width: 80px;
-    border-radius: .75rem;
-    background-size: cover;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 2rem;
-    margin: 0 10px;
     display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-}
-.card > .row {
-    color: white;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    transition: 0.3s;
-}
-.row > .row-text{
-    display: flex;
-}
-.row > .botao{
-    display: none;
-}
-.row > .botao > a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.row > .botao:hover{
-    box-shadow: 4px 4px 8px #ffffff93;
-}
-
-.card > .row > .row-text > .icon {
-    background: #223;
-    color: white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    align-content: center;
-    margin: 15px;
-}
-
- .description {
-    display: none;
-    justify-content: center;
     flex-direction: column;
+    min-width: 0;
+    width: 320px;
+    border: 1px solid rgba(0, 107, 143, 0.2);
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 5px 18px rgba(23, 45, 56, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 107, 143, 0.65);
+    box-shadow: 0 12px 28px rgba(23, 45, 56, 0.14);
+}
+
+/* ===== IMAGEM ===== */
+
+.card-imagem {
+    display: block;
+    width: 100%;
+    height: 150px;
+    flex-shrink: 0;
     overflow: hidden;
-    height: 80px;
-    width: fit-content;
-    opacity: 0;
-    transform: translateY(30px);
-    transition-delay: .3s;
-    transition: all .3s ease;
+    background-color: #dce8ed;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
 }
 
-.description p {
-    color: #ffffff;
-    padding-top: 5px;
+.card-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+.card:hover .card-imagem img {
+    transform: scale(1.03);
+}
+/* ===== CONTEÚDO ===== */
+
+.card .row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    gap: 18px;
+
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #172D38;
 }
 
-.description h4 {
-    text-transform: uppercase;
+.row .row-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
 }
 
+/* Número do projeto */
+
+.card .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+    background: rgba(0, 107, 143, 0.12);
+    color: #006B8F;
+
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+/* ===== DESCRIÇÃO ===== */
+
+.card .description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 100%;
+    height: auto;
+    overflow: visible;
+
+    opacity: 1;
+    transform: none;
+    transition: none;
+}
+
+.card .description h4 {
+    margin: 0;
+    color: #172D38;
+
+    font-size: 1.2rem;
+    font-weight: 750;
+    line-height: 1.4;
+}
+
+.card .description p {
+    margin: 0;
+    padding: 0;
+
+    color: #405762;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Tecnologias */
+
+.card .description p:last-child {
+    margin-top: 4px;
+    color: #006B8F;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+/* ===== BOTÃO ===== */
+
+.card .botao {
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+}
+
+.card .botao a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+
+    border: 1px solid #006B8F;
+    border-radius: 9px;
+
+    background: #006B8F;
+    color: #fff;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.card .botao a:hover {
+    background: #00516D;
+    border-color: #00516D;
+}
+
+/* ===== PROJETO EM DESTAQUE ===== */
+
+.card-destaque {
+    border-color: rgba(0, 107, 143, 0.55);
+}
+
+.card-destaque .icon {
+    background: #006B8F;
+    color: #fff;
+}
+
+/* ===== REMOVER COMPORTAMENTO ANTIGO ===== */
 
 .input-projetos {
     display: none;
 }
 
-input:checked + label {
-    width: 600px;
-}
-
-input:checked + label .row{
-    padding: 10px 15px 10px 0px;
-    backdrop-filter: blur(16px);
-}
-
-input:checked + label .description {
-    display: flex;
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-input:checked + label .row .botao{
-    display: flex;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #0022FF;
-    transition: 0.8s;
-}
-
-input + .card[for="1"]{
-    background-image: url('../assets/images/movies_lib.PNG');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 13% 35%;
-}
-
-input + .card[for="2"]{
-    background-image: url('../assets/images/cinema.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 28% 30%;
-}
-
-input + .card[for="3"]{
-    background-image: url('../assets/images/karaoke.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 34% 40%;
-}
-
-input + .card[for="4"]{
-    background-image: url('../assets/images/dashboard.PNG');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 0% 0%;
-}
-
-input:checked + .card[for="1"] {
-    background-image: url('../assets/images/movies_lib.PNG');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-input:checked + .card[for="2"] {
-    background-image: url('../assets/images/cinema.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-input:checked + .card[for="3"] {
-    background-image: url('../assets/images/karaoke.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-input:checked + .card[for="4"] {
-    background-image: url('../assets/images/dashboard.PNG');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-@media (max-width: 1350px){
-    
-    .card{
-        height: 100px;
+/* ===== RESPONSIVIDADE ===== */
+@media (min-width: 601px) and (max-width: 1000px) {
+    .card-imagem {
+        height: 130px;
     }
-    input:checked + label {
-        width: 600px;
-        height: 400px;
+
+    .card-imagem img {
+        object-fit: cover;
+        object-position: center top;
     }
 }
 
-@media screen and (max-width: 900px) {
-    input:checked + label {
-        width: 500px;
-        height: 300px;
+@media (max-width: 600px) {
+    .card-imagem {
+        height: 120px;
+    }
+    .card {
+        border-radius: 13px;
+    }
+
+    .card .row {
+        padding: 16px;
+        gap: 15px;
+    }
+
+    .card .description h4 {
+        font-size: 1.1rem;
+    }
+
+    .card .description p {
+        font-size: 0.88rem;
     }
 }
 
-@media screen and (max-width: 650px) {
-    input:checked + label {
-        width: 100%;
-        height: 350px;
+@media (prefers-reduced-motion: reduce) {
+    .card,
+    .card .card-imagem img,
+    .card .botao a {
+        transition: none;
     }
 
-    .row-text{
-        height: 100px;
+    .card:hover {
+        transform: none;
     }
-    .description{
-        height: 100%;
+
+    .card:hover .card-imagem img {
+        transform: none;
     }
 }

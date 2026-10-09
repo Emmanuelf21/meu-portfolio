@@ -1,54 +1,53 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+
+import { FiExternalLink } from 'react-icons/fi';
 
 import './card.css';
 
-const Card = ({ id, titulo, texto, habilidades, projeto, status }) => {
-    if (status) {
-        return (
-            <>
-                <input className='input-projetos' type="radio" name="slide" id={id} defaultChecked />
-                <label htmlFor={id} className='card'>
-                    <div className="row">
-                        <div className="row-text">
-                            <div className="icon">{id}</div>
-                            <div className="description">
-                                <h4>{titulo}</h4>
-                                <p>{texto}</p>
-                                <p>{habilidades}</p>
-                            </div>
-                        </div>
-                        <div className="botao">
-                            <Link to={projeto} target='_blank'>Ver projeto</Link>
-                        </div>
-                    </div>
-                </label>
-            </>
-        )
+const Card = ({
+  id,
+  titulo,
+  texto,
+  habilidades,
+  projeto,
+  imagem,
+  status
+}) => {
+  return (
+    <article className={`card `}>
+      <div className="card-imagem">
+        <img
+          src={imagem}
+          alt={`Prévia do projeto ${titulo}`}
+          loading="lazy"
+        />
+      </div>
 
-    } else {
-        return (
-            <>
-                <input className='input-projetos' type="radio" name="slide" id={id} />
-                <label htmlFor={id} className='card'>
-                    <div className="row">
-                    <div className="row-text">
-                            <div className="icon">{id}</div>
-                            <div className="description">
-                                <h4>{titulo}</h4>
-                                <p>{texto}</p>
-                                <p>{habilidades}</p>
-                            </div>
-                        </div>
-                        <div className="botao">
-                            <Link to={projeto} target='_blank'>Ver projeto</Link>
-                        </div>
-                    </div>
-                </label>
-            </>
-        )
-    }
+      <div className="row">
+        <div className="row-text">
+          <span className="icon">
+            {String(id).padStart(2, '0')}
+          </span>
 
-}
+          <div className="description">
+            <h4>{titulo}</h4>
+            <p>{texto}</p>
+            <p>{habilidades}</p>
+          </div>
+        </div>
 
-export default Card
+        <div className="botao">
+          <a
+            href={projeto}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver projeto
+            <FiExternalLink aria-hidden="true" />
+          </a>
+        </div>
+      </div>
+    </article>
+  );
+};
+
+export default Card;
