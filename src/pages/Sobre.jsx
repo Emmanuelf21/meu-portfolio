@@ -1,42 +1,80 @@
+import {
+  FaGraduationCap,
+  FaChalkboardTeacher,
+  FaLaptopCode,
+} from "react-icons/fa";
 
-import { FaJava, FaPython, FaReact, FaJs } from 'react-icons/fa';
-
-
-import './sobre.css';
+import "./sobre.css";
 
 const Sobre = () => {
   return (
-    <div className="container-sobre">
-      <section className="lateral">
-        {/* <div className='imagem-codigo'></div> */}
-        <div className='icones'>
-          <FaJava />
-          <FaPython color='rgb(0, 255, 213)' />
-        </div>
-      </section>
+    <main className="container-sobre">
       <section className="sobre-info">
-        <h2>Sobre mim!</h2>
-        <span className='texto'>
-          <p>
-            Sou apaixonado por tecnologia e desenvolvimento de software. Iniciei minha jornada acadêmica em Ciências da Computação pela Unicsul e, atualmente, estou cursando Técnico em Desenvolvimento de Sistemas no Senai, ampliando ainda mais meu conhecimento na área.
-          </p>
-          <p>
-            Durante minha trajetória, trabalhei em projetos utilizando diversas tecnologias, como Java, Python, JavaScript, React e jQuery, desenvolvendo soluções robustas e eficientes. Embora meu foco atual seja no front-end, onde exploro ao máximo minhas habilidades em criar interfaces interativas e amigáveis, também estou comprometido em expandir meu domínio no back-end.
-          </p>
-          <p>
-            Estou sempre em busca de novos desafios e oportunidades para aprender, inovar e contribuir com projetos que impactem positivamente a experiência dos usuários.
-          </p>
-        </span>
-      </section>
-      <section className='lateral'>
-        <div className='icones'>
-          <FaReact color='rgb(0, 255, 213)' />
-          <FaJs />
-        </div>
-        {/* <div className='imagem-codigo'></div> */}
-      </section>
-    </div>
-  )
-}
+        <header className="sobre-header">
+          <span className="sobre-etiqueta">QUEM SOU EU</span>
+          <h2>
+            Sobre mim<span>!</span>
+          </h2>
+          <div className="sobre-linha"></div>
+        </header>
 
-export default Sobre
+        <div className="texto">
+          <p>
+            Sou bacharel em Ciência da Computação pela Unicsul e desenvolvedor
+            de software, apaixonado por tecnologia e pela criação de soluções
+            que transformam ideias em projetos reais.
+          </p>
+
+          <p>
+            Atualmente, sou instrutor de programação e robótica na Ctrl+Play.
+            Também desenvolvo aplicações web com React, Python, APIs REST e
+            bancos de dados. Busco evoluir continuamente e contribuir com
+            projetos que unam funcionalidade, tecnologia e boa experiência para
+            o usuário.
+          </p>
+          <p>
+            Meu objetivo é consolidar minha carreira como desenvolvedor de
+            software, aplicando meus conhecimentos em projetos reais e evoluindo
+            continuamente como profissional. Busco uma oportunidade na área de
+            desenvolvimento para aprender com equipes experientes, enfrentar
+            novos desafios e contribuir com soluções úteis e de qualidade.
+          </p>
+        </div>
+
+        <div className="sobre-destaques">
+          <article className="destaque">
+            <div className="destaque-icone">
+              <FaGraduationCap />
+            </div>
+            <div className="destaque-conteudo">
+              <h3>Formação</h3>
+              <p>Ciência da Computação</p>
+            </div>
+          </article>
+
+          <article className="destaque">
+            <div className="destaque-icone">
+              <FaChalkboardTeacher />
+            </div>
+            <div className="destaque-conteudo">
+              <h3>Experiência</h3>
+              <p>Programação e robótica</p>
+            </div>
+          </article>
+
+          <article className="destaque">
+            <div className="destaque-icone">
+              <FaLaptopCode />
+            </div>
+            <div className="destaque-conteudo">
+              <h3>Foco profissional</h3>
+              <p>Desenvolvimento de software</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default Sobre;

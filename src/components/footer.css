@@ -63,5 +63,7 @@ svg{
 @media screen and (max-width: 600px) {
     .email{
         font-size: 1.1rem;
+        margin: auto;
+        width: fit-content;
     }
 }
