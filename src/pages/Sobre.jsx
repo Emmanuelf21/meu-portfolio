@@ -1,6 +1,8 @@
 import {
   FaGraduationCap,
   FaChalkboardTeacher,
+  FaExternalLinkAlt,
+  FaBookOpen,
   FaLaptopCode,
 } from "react-icons/fa";
 
@@ -40,7 +42,32 @@ const Sobre = () => {
             novos desafios e contribuir com soluções úteis e de qualidade.
           </p>
         </div>
+        <section className="sobre-publicacao">
+          <div className="publicacao-icone">
+            <FaBookOpen />
+          </div>
 
+          <div className="publicacao-conteudo">
+            <span className="publicacao-etiqueta">
+              PRODUÇÃO TÉCNICA / ACADÊMICA
+            </span>
+            <h3>Artigo publicado</h3>
+            <p>
+              Confira meu artigo sobre assebilidade digital para terceira idade e conheça um pouco mais sobre meus estudos,
+              experiências e contribuições na área de tecnologia.
+            </p>
+
+            <a
+              href="https://ojs.ifsp.edu.br/sinergia/article/view/2501"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="publicacao-link"
+            >
+              Ler artigo
+              <FaExternalLinkAlt />
+            </a>
+          </div>
+        </section>
         <div className="sobre-destaques">
           <article className="destaque">
             <div className="destaque-icone">

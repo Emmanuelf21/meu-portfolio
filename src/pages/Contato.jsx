@@ -36,13 +36,9 @@ const Contato = () => {
 
           <input type="hidden" name="accessKey" value={email} />
           <input type="hidden" name="redirectTo" value="https://emmanuel-franco.vercel.app" />
-          <div className="btn-enviar">
-            <button type="submit">
-              <div className="blob1"></div>
-              <div className="blob2"></div>
-              <div className="inner">Enviar</div>
+            <button className="btn-enviar" type="submit">
+              Enviar
             </button>
-          </div>
         </form>
       </div>
     </section>

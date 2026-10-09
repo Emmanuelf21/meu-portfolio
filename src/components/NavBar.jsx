@@ -25,27 +25,27 @@ const NavBar = () => {
   useEffect(() => {
     const links = [document.querySelector(".h2-home"), document.querySelector(".h2-sobre"), document.querySelector(".h2-projetos"), document.querySelector(".h2-contato"), document.querySelector(".h2-habilidades")];
     links.forEach((link) => { link.style = 'color: #000' });
-    links[0].style = 'color: #0022FF';
+    links[0].style = 'color: #006B8F';
     switch (query) {
       case '1':
         links.forEach((link) => { link.style = 'color: #000' });
-        links[0].style = 'color: #0022FF';
+        links[0].style = 'color: #006B8F';
         break;
       case '2':
         links.forEach((link) => { link.style = 'color: #000' });
-        links[1].style = 'color: #0022FF';
+        links[1].style = 'color: #006B8F';
         break;
       case '3':
         links.forEach((link) => { link.style = 'color: #000' });
-        links[2].style = 'color: #0022FF';
+        links[2].style = 'color: #006B8F';
         break;
       case '4':
         links.forEach((link) => { link.style = 'color: #000' });
-        links[3].style = 'color: #0022FF';
+        links[3].style = 'color: #006B8F';
         break;
       case '5':
         links.forEach((link) => { link.style = 'color: #000' });
-        links[4].style = 'color: #0022FF';
+        links[4].style = 'color: #006B8F';
         break;
     }
 

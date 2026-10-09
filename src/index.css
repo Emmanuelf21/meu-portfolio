@@ -7,5 +7,19 @@
 }
 
 body{
-  background-color: #62c0f7;
+  /* background-color: #97d9ff; */
+  /* background:
+        linear-gradient(135deg,
+            rgb(12, 114, 114),
+            rgba(179, 236, 255, 0.997)
+        ) padding-box; */
+
+    background: linear-gradient(
+        135deg,
+        #DDF6F6 0%,
+        #C9E8F0 50%,
+        #EAF5FA 100%
+    );
+
+
 }

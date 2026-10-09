@@ -1,187 +1,369 @@
-.container-habilidades{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-    width: 60%;
-    margin: 4.6% auto;
-    padding: 4rem 8rem;
-    height: 80%;
-    align-items: center;
-    height: fit-content;
-    border-radius: 25px;
-    box-shadow: 6px 6px 8px #0000004f;
-    background: linear-gradient(rgba(135, 207, 231, 0.603), rgba(173, 216, 230, 0.705)) padding-box,
-    linear-gradient(145deg, transparent 15%,#2e2e2e73, #1414149d) border-box;
+.container-habilidades {
+    min-height: 100vh;
+    color: #172D38;
+    width: 90%;
+    margin: 30px auto;
+    padding: 2rem 4rem;
+    box-shadow: 6px 6px 10px #006b8f4f;
+    background:
+    linear-gradient(
+        135deg,
+        rgb(221, 246, 246),
+        rgba(173, 216, 230, 0.85)
+    ) padding-box,
+    linear-gradient(
+        145deg,
+        transparent 15%,
+        rgba(0, 107, 143, 0.35),
+        rgba(23, 55, 70, 0.65)
+    ) border-box;
     border-radius: 20px;
     border: 5px solid transparent;
-}
-
-.habilidades{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    width: 100%;
-}
-
-.cards-habilidades{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 100%;
-}
-
-.cards-habilidades img{
-    width: 4rem;
-}
-
-.card-habilidade{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    text-align: center;
-    width: 200px;
-    height: 366px;
-    padding: 1rem;
-    border-radius: 25px;
-    background: linear-gradient(rgba(109, 152, 218, 0.753), rgba(129, 214, 243, 0.705)) padding-box,
-    linear-gradient(145deg, transparent 15%,#2e2e2e73, #1414149d) border-box;
-    color: white;
-    border: 5px solid transparent;
-}
-
-.card-habilidade:hover {
-    box-shadow: 0px 0px 30px white;
-    cursor: default;
-}
-
-.certificados{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-.slider{
-    position: relative;
-    width: 100%;
     box-sizing: border-box;
-    height: var(--height);
-    overflow: hidden;
-    mask-image: linear-gradient(
-        to right,
-        transparent,
-        #000,
-        transparent 98%
-    );
 }
 
-.slider .list{
-    display: flex;
-    gap: 20px;
+.secao-habilidades,
+.secao-certificados {
     width: 100%;
-    height: 100%;
-    min-width: calc(var(--width)*var(--quantidade));
+    max-width: 1400px;
+    margin: 0 auto 64px;
 }
 
-.slider .list .item{
-    width: var(--width);
-    height: var(--height);
-    left: 100%;
-    position: absolute;
-    animation: autorun 9s linear infinite;
-    -webkit-animation: autorun 9s linear infinite;
-    animation-delay: calc((9s/var(--quantidade))*(var(--position) - 1));
+.cabecalho-habilidades {
+    max-width: 760px;
+    margin: 0 auto 42px;
+    text-align: center;
 }
 
-.slider:hover .item{
-    animation-play-state: paused;
+.sobretitulo-habilidades {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #006B8F;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
-.slider .list .item img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+.cabecalho-habilidades h2 {
+    margin: 0 0 14px;
+    color: #172D38;
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    font-weight: 800;
 }
 
-.certificados a{
-    text-decoration: underline;
-    color: white;
+.cabecalho-habilidades p {
+    margin: 0;
+    color: #405762;
     font-size: 1.2rem;
-    font-weight: bold;
-    text-shadow: 0px 0px 20px white;
+    line-height: 1.8;
 }
 
-@keyframes autorun{
-    from{
-        left: 100%;
-    }to{
-        left: calc(calc(var(--width)*var(--quantidade))*-1);
+.bloco-habilidades {
+    margin-bottom: 48px;
+}
+
+.titulo-secao-habilidades {
+    margin-bottom: 22px;
+}
+
+.titulo-secao-habilidades h3 {
+    margin: 0 0 8px;
+    color: #172D38;
+    font-size: 1.45rem;
+}
+
+.titulo-secao-habilidades p {
+    margin: 0;
+    color: #405762;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.grade-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.tecnologia-item {
+    display: flex;
+    min-height: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 107, 143, 0.18);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.48);
+    box-shadow: 0 5px 16px rgba(23, 45, 56, 0.06);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tecnologia-item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 107, 143, 0.55);
+}
+
+.tecnologia-item img {
+    display: block;
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.tecnologia-item span {
+    color: #172D38;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.grade-competencias {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.competencia-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    border: 1px solid rgba(0, 107, 143, 0.18);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.48);
+    box-shadow: 0 5px 16px rgba(23, 45, 56, 0.06);
+}
+
+.competencia-icone {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    background: rgba(0, 107, 143, 0.12);
+    color: #006B8F;
+    font-size: 1.35rem;
+}
+
+.competencia-card h4 {
+    margin: 0 0 10px;
+    color: #172D38;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.competencia-card p {
+    margin: 0 0 18px;
+    color: #405762;
+    font-size: 0.92rem;
+    line-height: 1.75;
+}
+
+.competencia-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.competencia-tags span {
+    padding: 6px 10px;
+    border: 1px solid rgba(0, 107, 143, 0.16);
+    border-radius: 7px;
+    background: rgba(0, 107, 143, 0.08);
+    color: #006B8F;
+    font-size: 0.76rem;
+    font-weight: 700;
+}
+
+.secao-certificados {
+    padding-top: 20px;
+}
+
+.grade-certificados {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.certificado-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid rgba(0, 107, 143, 0.2);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.55);
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 5px 16px rgba(23, 45, 56, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certificado-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(23, 45, 56, 0.12);
+}
+
+.certificado-imagem {
+    display: flex;
+    min-height: 190px;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.certificado-imagem img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.certificado-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 62px;
+    padding: 14px 16px;
+    border-top: 1px solid rgba(0, 107, 143, 0.12);
+}
+
+.certificado-info span {
+    color: #172D38;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.certificado-info svg {
+    flex-shrink: 0;
+    color: #006B8F;
+    font-size: 1.1rem;
+}
+
+.botao-certificados {
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 32px auto 0;
+    padding: 12px 22px;
+    box-sizing: border-box;
+    border: 1px solid #006B8F;
+    border-radius: 10px;
+    background: #006B8F;
+    color: #fff;
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.botao-certificados:hover {
+    background: #00516D;
+}
+
+.botao-certificados svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 950px) {
+    .grade-tecnologias {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grade-competencias,
+    .grade-certificados {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-:root{
-    --position:0;
-}
-
-@media screen and (max-width: 800px) {
-    .container-habilidades{
-        width: 90%;
+@media (max-width: 600px) {
+    .container-habilidades {
+        padding: 32px 5%;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .container-habilidades{
+    .secao-habilidades,
+    .secao-certificados {
+        margin-bottom: 44px;
+    }
+
+    .cabecalho-habilidades {
+        margin-bottom: 32px;
+    }
+
+    .cabecalho-habilidades p {
+        font-size: 0.92rem;
+    }
+
+    .grade-tecnologias {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .tecnologia-item {
+        min-height: 100px;
+        padding: 14px 8px;
+        gap: 10px;
+    }
+
+    .tecnologia-item img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .tecnologia-item span {
+        font-size: 0.82rem;
+    }
+
+    .grade-competencias,
+    .grade-certificados {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .competencia-card {
+        padding: 20px;
+    }
+
+    .certificado-imagem {
+        min-height: 170px;
+    }
+
+    .certificado-imagem img {
+        height: 140px;
+    }
+
+    .botao-certificados {
         width: 100%;
-        padding: 2rem 4rem;
+        padding: 12px 14px;
+        font-size: 0.85rem;
     }
-    .cards-habilidades{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tecnologia-item,
+    .certificado-card,
+    .botao-certificados {
+        transition: none;
     }
 
-    .card-habilidade{
-        width: 200px;
-        padding: 0.5rem;
-    }
-
-    .slider{
-        height: var(--height2);
-        mask-image: linear-gradient(
-            to right,
-            transparent,
-            #000,
-            transparent 99%
-        );
-    }
-    
-    .slider .list{
-        min-width: calc(var(--width2)*var(--quantidade));
-    }
-    
-    .slider .list .item{
-        width: var(--width2);
-        height: var(--height2);
-        animation-delay: calc((9s/var(--quantidade))*(var(--position) - 1));
-    }
-
-    .certificados a{
-        font-size: 1rem;
-    }
-
-    @keyframes autorun{
-        from{
-            left: 100%;
-        }to{
-            left: calc(calc(var(--width2)*var(--quantidade))*-1);
-        }
+    .tecnologia-item:hover,
+    .certificado-card:hover {
+        transform: none;
     }
 }

@@ -4,27 +4,27 @@
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
-    width: 65%;
-    max-width: 1100px;
+    width: 90%;
+    max-width: 1200px;
     margin: 4.2% auto;
     padding: 3.5rem;
     box-sizing: border-box;
     border: 5px solid transparent;
     border-radius: 20px;
-    box-shadow: 6px 6px 8px #0000004f;
+    box-shadow: 6px 6px 10px #006b8f4f;
 
-    /* Mesmo fundo azul da seção Sobre */
     background:
-        linear-gradient(
-            rgba(135, 207, 231, 0.603),
-            rgba(173, 216, 230, 0.705)
-        ) padding-box,
-        linear-gradient(
-            145deg,
-            transparent 15%,
-            #2e2e2e73,
-            #1414149d
-        ) border-box;
+    linear-gradient(
+        135deg,
+        rgb(221, 246, 246),
+        rgba(173, 216, 230, 0.85)
+    ) padding-box,
+    linear-gradient(
+        145deg,
+        transparent 15%,
+        rgba(0, 107, 143, 0.35),
+        rgba(23, 55, 70, 0.65)
+    ) border-box;
 }
 
 /* Apresentação */

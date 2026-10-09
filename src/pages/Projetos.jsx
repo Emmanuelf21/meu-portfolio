@@ -35,8 +35,10 @@ const imagem4 = imagemDashboard;
 const Projetos = () => {
   return (
     <main className="container-projetos">
-      <h2>Meus Projetos!</h2>
+      <h2>Meus Projetos!
+      <div className='projetos-linha'></div>
 
+      </h2>
       <section className="cards">
         <Card
           id="1"

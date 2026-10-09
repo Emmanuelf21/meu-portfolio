@@ -13,7 +13,7 @@
     height: fit-content;
     border-radius: 25px;
     padding: 2rem;
-    box-shadow: 0px 6px 8px #0000004f;
+    box-shadow: 0px 3px 10px  #006b8f49;
 }
 
 #navBar svg{
@@ -29,7 +29,7 @@
     flex-wrap: wrap;
 }
 a.h2-home{
-  color: #0022FF;
+  color: #006B8F;
 }
 .h2-sobre,
 .h2-projetos,
@@ -71,11 +71,12 @@ a.h2-home{
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    color: #0022FF;
-    border-right: 0.2em solid #0022FF; /* Cursor */
+    color: #006B8F;
+    border-right: 0.1em solid #006B8F; /* Cursor */
     animation: typeAndDelete 4s steps(11) infinite,
       blinkCursor 0.5s step-end infinite alternate;
   }
+  
   @media screen and (max-width: 1490px) {
     .menu-burger{
       width: 50%;
@@ -118,10 +119,10 @@ a.h2-home{
       top: 6.8rem;
       width: 70%;
       padding: 1rem;
-      backdrop-filter: blur(8px);
-      background: #62c0f76e;
+      backdrop-filter: blur(10px);
+      background: #b5e4ffcc;
       border-top: none;
-      border: 2px solid white;
+      border: 2px solid rgb(255, 255, 255);
       border-radius: 0px 0px 20px 20px;
       z-index: 1;
     }
